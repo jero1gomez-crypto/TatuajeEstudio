@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TATTOOJZ — JHONATAN ZULUAGA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght=300;400;500;600;700&family=VT323&family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <!-- Archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cur"></div>
+  <div id="cur-trail"></div>
+
+  <!-- SCROLL BAR -->
+  <div id="scroll-bar"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-skull">💀</div>
+    <div class="loader-text" id="loader-txt">CARGANDO...</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar-fill" id="loader-fill"></div>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/573000000000?text=Hola%2C%20quiero%20cotizar%20un%20tatuaje" target="_blank" class="wa-float" title="Chatea por WhatsApp">
+    📱
+  </a>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">TATTOO<span>JZ</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#testimonios">Reviews</a></li>
+      <li><a href="#contacto" class="nav-cta"><span>Cotiza ya</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text" aria-hidden="true">TATTOOJZ</div>
+    <div class="hero-vertical" aria-hidden="true">MEDELLÍN · COLOMBIA · EST 2018</div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-blink"></span>
+        ESTUDIO DISPONIBLE · MEDELLÍN
+      </div>
+
+      <div class="glitch-wrap">
+        <h1 class="hero-h1 glitch" data-text="MARCA TU" id="heroH1">MARCA TU</h1>
+      </div>
+      <div class="glitch-wrap">
+        <h1 class="hero-h1" style="color:var(--red);text-shadow:0 0 40px rgba(255,0,51,.4)">HISTORIA</h1>
+      </div>
+      <div class="glitch-wrap">
+        <h1 class="hero-h1" style="font-size:clamp(2.5rem,7vw,7rem);color:var(--metal);-webkit-text-stroke:1px rgba(255,255,255,.15);color:transparent">EN TU PIEL</h1>
+      </div>
+
+      <p class="hero-sub">Jhonatan Zuluaga — <span>Tattoo Artist</span></p>
+      <p class="hero-desc">
+        Arte permanente con precisión quirúrgica. Cada línea cuenta una historia, cada sombra define un carácter.
+        No hacemos tatuajes, creamos identidad.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-primary">
+          ⚡ AGENDA TU CITA
+        </a>
+        <a href="#galeria" class="btn-secondary">
+          VER PORTFOLIO →
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num" data-count="800" data-suffix="+">0+</div>
+          <div class="stat-label">Tatuajes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="6" data-suffix="+ años">0</div>
+          <div class="stat-label">Experiencia</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-count="100" data-suffix="%">0%</div>
+          <div class="stat-label">Originalidad</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-line"></div>
+      SCROLL
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SERVICES -->
+  <section class="services" id="servicios">
+    <div class="section-eyebrow" data-reveal>Especialidades</div>
+    <h2 class="section-title" data-reveal>ESTILOS QUE<br><span>DEFINEN</span></h2>
+
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <div class="service-num">01</div>
+        <span class="service-icon">🖤</span>
+        <div class="service-name">Blackwork</div>
+        <p class="service-desc">Diseños en negro puro con contrastes poderosos. Líneas geométricas, tribal y ornamental con precisión absoluta.</p>
+        <span class="service-tag">SIGNATURE STYLE</span>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">02</div>
+        <span class="service-icon">💀</span>
+        <div class="service-name">Neo-Tradicional</div>
+        <p class="service-desc">Reinterpretación moderna del tatuaje clásico. Paleta saturada, líneas gruesas y simbolismo profundo.</p>
+        <span class="service-tag">POPULAR</span>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">03</div>
+        <span class="service-icon">🌑</span>
+        <div class="service-name">Realismo Oscuro</div>
+        <p class="service-desc">Retratos y escenas con técnica fotorrealista. Sombreado avanzado que da vida a lo oscuro.</p>
+        <span class="service-tag">PREMIUM</span>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">04</div>
+        <span class="service-icon">⚡</span>
+        <div class="service-name">Lettering</div>
+        <p class="service-desc">Tipografías personalizadas, caligrafia y diseño de texto. Palabras que se convierten en arte vivo.</p>
+        <span class="service-tag">CUSTOM</span>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">05</div>
+        <span class="service-icon">🔥</span>
+        <div class="service-name">Cover-Up</div>
+        <p class="service-desc">Transformamos tatuajes viejos o arrepentimientos en obras maestras. Técnica especializada de encubrimiento.</p>
+        <span class="service-tag">ESPECIALIDAD</span>
+      </div>
+      <div class="service-card" data-reveal>
+        <div class="service-num">06</div>
+        <span class="service-icon">🌿</span>
+        <div class="service-name">Diseño Personalizado</div>
+        <p class="service-desc">Creamos tu diseño desde cero. De tu idea al boceto, del boceto a tu piel. 100% único.</p>
+        <span class="service-tag">EXCLUSIVO</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="galeria">
+    <div class="gallery-header">
+      <div class="section-eyebrow" data-reveal>Portfolio</div>
+      <h2 class="section-title" data-reveal>TRABAJO <span>REAL</span>,<br>ARTE <span class="purple">PERMANENTE</span></h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Imagen 1 -->
+      <div class="gal-item" data-reveal="scale">
+        <div class="gal-placeholder">
+          <img src="imagenes/tattoo1.jpg" alt="Tatuaje Blackwork Dragón">
+        </div>
+        <div class="gal-glitch" style="background:rgba(255,0,51,.05)"></div>
+        <div class="gal-info">
+          <div class="gal-info-title">DRAGÓN TRIBAL</div>
+          <div class="gal-info-sub">Blackwork · 6 horas</div>
+        </div>
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="gal-item" data-reveal="scale">
+        <div class="gal-placeholder">
+          <img src="imagenes/tattoo2.jpg" alt="Tatuaje Neo-Tradicional Calavera">
+        </div>
+        <div class="gal-glitch" style="background:rgba(139,0,255,.05)"></div>
+        <div class="gal-info">
+          <div class="gal-info-title">CALAVERA MEXICANA</div>
+          <div class="gal-info-sub">Neo-Trad · 4 horas</div>
+        </div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div class="gal-item" data-reveal="scale">
+        <div class="gal-placeholder">
+          <img src="imagenes/tattoo3.jpg" alt="Tatuaje Realismo Luna">
+        </div>
+        <div class="gal-glitch"></div>
+        <div class="gal-info">
+          <div class="gal-info-title">LUNA LLENA</div>
+          <div class="gal-info-sub">Realismo · 3 horas</div>
+        </div>
+      </div>
+
+      <!-- Imagen 4 -->
+      <div class="gal-item" data-reveal="scale">
+        <div class="gal-placeholder">
+          <img src="imagenes/tattoo4.jpg" alt="Tatuaje Geométrico Águila">
+        </div>
+        <div class="gal-glitch"></div>
+        <div class="gal-info">
+          <div class="gal-info-title">ÁGUILA GEOMÉTRICA</div>
+          <div class="gal-info-sub">Geometric · 5 horas</div>
+        </div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="gal-item" data-reveal="scale">
+        <div class="gal-placeholder">
+          <img src="imagenes/tattoo5.jpg" alt="Tatuaje Lettering Espadas">
+        </div>
+        <div class="gal-glitch"></div>
+        <div class="gal-info">
+          <div class="gal-info-title">ESPADAS CRUZADAS</div>
+          <div class="gal-info-sub">Lettering · 2 horas</div>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="gal-item" data-reveal="scale">
+        <div class="gal-placeholder">
+          <img src="imagenes/tattoo6.jpg" alt="Tatuaje Floral Rosas">
+        </div>
+        <div class="gal-glitch"></div>
+        <div class="gal-info">
+          <div class="gal-info-title">ROSAS NEGRAS</div>
+          <div class="gal-info-sub">Blackwork · 3h 30min</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-more">
+      <a href="https://www.instagram.com/" target="_blank" class="btn-secondary" data-reveal>
+        📸 VER MÁS EN INSTAGRAM →
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROCESS -->
+  <section class="process" id="proceso">
+    <div class="section-eyebrow" data-reveal>Cómo funciona</div>
+    <h2 class="section-title" data-reveal>EL <span>PROCESO</span></h2>
+
+    <div class="process-steps">
+      <div class="step-card" data-reveal>
+        <div class="step-num">01</div>
+        <div class="step-title">CONSULTA</div>
+        <p class="step-desc">Contáctanos con tu idea. Hablamos del diseño, tamaño, ubicación y presupuesto sin compromiso.</p>
+      </div>
+      <div class="step-card" data-reveal>
+        <div class="step-num">02</div>
+        <div class="step-title">DISEÑO</div>
+        <p class="step-desc">Creamos el boceto personalizado. Revisamos juntos hasta que quede exactamente como lo imaginaste.</p>
+      </div>
+      <div class="step-card" data-reveal>
+        <div class="step-num">03</div>
+        <div class="step-title">PREPARACIÓN</div>
+        <p class="step-desc">Agendamos tu cita. Te damos indicaciones sobre cómo preparar tu piel para el mejor resultado posible.</p>
+      </div>
+      <div class="step-card" data-reveal>
+        <div class="step-num">04</div>
+        <div class="step-title">EJECUCIÓN</div>
+        <p class="step-desc">La sesión de tatuaje en nuestro estudio privado, con equipo estéril de última generación.</p>
+      </div>
+      <div class="step-card" data-reveal>
+        <div class="step-num">05</div>
+        <div class="step-title">CUIDADO</div>
+        <p class="step-desc">Recibes guía completa de aftercare. Te acompañamos durante todo el proceso de cicatrización.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonios">
+    <div class="section-eyebrow" data-reveal>Lo que dicen</div>
+    <h2 class="section-title" data-reveal>CLIENTES QUE <span>VOLVIERON</span></h2>
+
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">Llevaba años sin atreverme por miedo al dolor y al resultado. Con JZ fue diferente, profesional desde la consulta hasta el aftercare. Mi primer tatuaje y ya estoy pensando en el segundo.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MA</div>
+          <div>
+            <div class="testi-name">María A.</div>
+            <div class="testi-detail">Blackwork · Manga completa</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">Le traje una foto de referencia y entregó algo 10 veces mejor. Entiende lo que quieres decir con el tatuaje, no solo lo que describes. Arte real.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">CR</div>
+          <div>
+            <div class="testi-name">Carlos R.</div>
+            <div class="testi-detail">Neo-Tradicional · Pecho</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">Vine con un tatuaje horrible que quería tapar. Lo transformó en algo que me encanta mostrar. Cover-up de 8 horas que valió cada minuto y cada peso.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">LG</div>
+          <div>
+            <div class="testi-name">Laura G.</div>
+            <div class="testi-detail">Cover-Up · Espalda</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">El estudio es impecable, todo estéril, música brutal. JZ es meticuloso y honesto: si algo no va a quedar bien, te lo dice antes. Eso lo diferencia.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DS</div>
+          <div>
+            <div class="testi-name">Diego S.</div>
+            <div class="testi-detail">Realismo · Antebrazo</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">Tercer tatuaje con Jhonatan. Imposible ir a otro artista después de esto. Las líneas limpias, los tiempos de curación perfectos. Vale la pena esperar cita.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">VH</div>
+          <div>
+            <div class="testi-name">Valentina H.</div>
+            <div class="testi-detail">Lettering · Costillas</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">Desde que entras al estudio el ambiente te atrapa. Música, atención al detalle, higiene total. El tatuaje quedó perfecto, cicatrizó en tiempo récord.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <div class="testi-name">Andrés M.</div>
+            <div class="testi-detail">Geometric · Pantorrilla</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contacto">
+    <div class="contact-wrap">
+      <div class="contact-info" data-reveal="left">
+        <div class="contact-label">// Agenda tu cita</div>
+        <h2 class="contact-headline">
+          LISTA PARA<br>
+          TU <span class="accent">PRÓXIMA</span><br>
+          OBRA
+        </h2>
+        <p class="contact-text">
+          El estudio tiene disponibilidad limitada. Completa el formulario y te contactamos en menos de 24 horas para confirmar tu consulta gratuita.
+        </p>
+
+        <div class="contact-details">
+          <a href="https://wa.me/573000000000" class="contact-item" target="_blank">
+            <div class="contact-item-icon">📱</div>
+            WhatsApp: +57 300 000 0000
+          </a>
+          <a href="https://www.instagram.com/tattoojz" class="contact-item" target="_blank">
+            <div class="contact-item-icon">📸</div>
+            @tattoojz
+          </a>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            Medellín, Antioquia · Colombia
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">⏰</div>
+            Lun–Sáb: 10am – 8pm
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal="right">
+        <form class="contact-form" id="contactForm" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Nombre</label>
+              <input type="text" id="f-name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="f-phone">WhatsApp</label>
+              <input type="tel" id="f-phone" placeholder="+57 300..." required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="f-style">Estilo de tatuaje</label>
+            <select id="f-style">
+              <option value="">Selecciona un estilo...</option>
+              <option>Blackwork</option>
+              <option>Neo-Tradicional</option>
+              <option>Realismo Oscuro</option>
+              <option>Lettering</option>
+              <option>Cover-Up</option>
+              <option>Diseño Personalizado</option>
+              <option>No sé / Necesito asesoría</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-desc">Describe tu idea</label>
+            <textarea id="f-desc" placeholder="Cuéntame tu idea: diseño, tamaño, ubicación en el cuerpo, referencias visuales..."></textarea>
+          </div>
+          <button type="submit" class="form-submit" id="formBtn">
+            ⚡ ENVIAR SOLICITUD
+          </button>
+          <p class="form-note">Sin costo de consulta · Respuesta en 24h · 100% privado</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="footer-logo">TATTOO<span>JZ</span></a>
+    <ul class="footer-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/tattoojz" target="_blank" class="social-btn" title="Instagram">📸</a>
+      <a href="https://wa.me/573000000000" target="_blank" class="social-btn" title="WhatsApp">📱</a>
+      <a href="https://www.tiktok.com/@tattoojz" target="_blank" class="social-btn" title="TikTok">🎵</a>
+    </div>
+    <div class="footer-copy">© 2024 TATTOOJZ · JHONATAN ZULUAGA · MEDELLÍN</div>
+  </footer>
+
+  <!-- Archivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
